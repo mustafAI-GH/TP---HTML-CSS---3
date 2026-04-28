@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    height: 300px;
+    transition-duration: 1s;
+}
+
+img:hover {
+    transform: scale(1.8) rotate(20deg);
+}
+
+div {
+    width: 200px;
+    margin: auto;
+}
+
+.egg {
+    background-color: rgb(226, 181, 55);
+    width: 195px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.egg:hover {
+    animation-name: protein;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+p {
+    text-align: center;
+    font-size: 80px;
+}
+
+@keyframes protein {
+    0% {
+        transform: scale(.4) rotate(0deg);
+        background-color: blue;
+    }
+    36% {
+        background-color: rgb(235, 97, 5);
+    }
+    78% {
+        transform: scale(5.6) rotate(360deg);
+    }
+}
